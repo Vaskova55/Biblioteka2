@@ -30,7 +30,7 @@ namespace Проект.Classes
         public static List<DataTrainess> Select()
         {
             List<DataTrainess> listTrainess = new List<DataTrainess>();
-            DataTable data = BDConnection.Select("SELECT * FROM Learner;");
+            DataTable data = BDConnection.Select("SELECT * FROM Trainesses;");
             foreach (DataRow row in data.Rows)
             {
                 listTrainess.Add(new DataTrainess(row));
@@ -39,13 +39,13 @@ namespace Проект.Classes
         }
         public void Delete()
         {
-            BDConnection.Select("DELETE FROM biblioteka.Learner WHERE(`id_20 - 21_kl` = '13')");
+            BDConnection.Select("DELETE FROM biblioteka.Trainesses WHERE(`id_20 - 21_kl` = '13')");
         }
 
         public static void TrainessAdd(int Class, string Family_name, string First_name, string Middle_name)
         {
-            BDConnection.Select("INSERT INTO Learner (`Class`, `Family_name`, `First_name`, `Middle_name`) " +
-                "VALUES '"+ Class +"', '"+ Family_name +"', '"+ First_name +"', '"+ Middle_name +"';");
+            BDConnection.Select("INSERT INTO Trainesses (`Class`, `Family_name`, `First_name`, `Middle_name`) " +
+                "VALUES ('"+ Class +"', '"+ Family_name +"', '"+ First_name +"', '"+ Middle_name +"');");
         }
     } 
 }
