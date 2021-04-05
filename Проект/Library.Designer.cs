@@ -1,7 +1,7 @@
 ﻿
 namespace Проект
 {
-    partial class Library
+    partial class LibraryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Проект
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Library));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LibraryForm));
             this.dgv_Library = new System.Windows.Forms.DataGridView();
             this.Update_Library = new System.Windows.Forms.Button();
             this.Serch_Library = new System.Windows.Forms.Button();
@@ -38,7 +38,7 @@ namespace Проект
             this.Add_Library = new System.Windows.Forms.Button();
             this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Publisher = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Publishing_year = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,17 +47,20 @@ namespace Проект
             // 
             // dgv_Library
             // 
+            this.dgv_Library.AllowUserToAddRows = false;
+            this.dgv_Library.AllowUserToDeleteRows = false;
             this.dgv_Library.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Library.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.type,
             this.Class,
-            this.Name,
+            this.NameColumn,
             this.Author,
             this.Publisher,
             this.Publishing_year});
             this.dgv_Library.Location = new System.Drawing.Point(83, 12);
             this.dgv_Library.MultiSelect = false;
             this.dgv_Library.Name = "dgv_Library";
+            this.dgv_Library.ReadOnly = true;
             this.dgv_Library.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Library.Size = new System.Drawing.Size(360, 262);
             this.dgv_Library.TabIndex = 6;
@@ -130,38 +133,44 @@ namespace Проект
             this.type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.type.HeaderText = "Тип";
             this.type.Name = "type";
+            this.type.ReadOnly = true;
             // 
             // Class
             // 
             this.Class.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Class.HeaderText = "Класс";
             this.Class.Name = "Class";
+            this.Class.ReadOnly = true;
             // 
-            // Name
+            // NameColumn
             // 
-            this.Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Name.HeaderText = "Название";
-            this.Name.Name = "Name";
+            this.NameColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NameColumn.HeaderText = "Название";
+            this.NameColumn.Name = "NameColumn";
+            this.NameColumn.ReadOnly = true;
             // 
             // Author
             // 
             this.Author.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Author.HeaderText = "Автор";
             this.Author.Name = "Author";
+            this.Author.ReadOnly = true;
             // 
             // Publisher
             // 
             this.Publisher.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Publisher.HeaderText = "Издательство";
             this.Publisher.Name = "Publisher";
+            this.Publisher.ReadOnly = true;
             // 
             // Publishing_year
             // 
             this.Publishing_year.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Publishing_year.HeaderText = "Год публикации";
             this.Publishing_year.Name = "Publishing_year";
+            this.Publishing_year.ReadOnly = true;
             // 
-            // Library
+            // LibraryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -173,7 +182,7 @@ namespace Проект
             this.Controls.Add(this.Edit_Library);
             this.Controls.Add(this.Add_Library);
             this.Controls.Add(this.dgv_Library);
-            this.Name = "Library";
+            this.Name = "LibraryForm";
             this.Text = "Библиотека";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Library)).EndInit();
             this.ResumeLayout(false);
@@ -190,7 +199,7 @@ namespace Проект
         private System.Windows.Forms.DataGridView dgv_Library;
         private System.Windows.Forms.DataGridViewTextBoxColumn type;
         private System.Windows.Forms.DataGridViewTextBoxColumn Class;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Author;
         private System.Windows.Forms.DataGridViewTextBoxColumn Publisher;
         private System.Windows.Forms.DataGridViewTextBoxColumn Publishing_year;

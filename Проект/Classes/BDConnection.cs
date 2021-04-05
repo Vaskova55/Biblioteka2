@@ -14,13 +14,14 @@ namespace Проект.Classes
         public static DataTable Select(string sql)
         {
             MySqlConnectionStringBuilder connectBuilder = new MySqlConnectionStringBuilder();
-            connectBuilder.UserID = "ISP333_VaskovaAN";
+            
             connectBuilder.Server = "192.168.201.12";
             connectBuilder.Port = 3306;
+            connectBuilder.UserID = "ISP333_VaskovaAN";
             connectBuilder.Password = "Vaskova333";
             connectBuilder.Database = "ISP333_VaskovaAN_biblioteka";
             connectBuilder.CharacterSet = "utf8";
-            MySqlConnection connect = new MySqlConnection();
+            MySqlConnection connect = new MySqlConnection(connectBuilder.ConnectionString);
             MySqlCommand command = new MySqlCommand(sql, connect);
             DataTable data = new DataTable();
             try

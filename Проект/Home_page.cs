@@ -25,7 +25,7 @@ namespace Проект
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Library f_l = new Library();
+            LibraryForm f_l = new LibraryForm();
             f_l.Show();
         }
 

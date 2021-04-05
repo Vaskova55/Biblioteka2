@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Проект
 {
-    public partial class Library : Form
+    public partial class LibraryForm : Form
     {
-        public Library()
+        public LibraryForm()
         {
             InitializeComponent();
         }
