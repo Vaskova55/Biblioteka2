@@ -1,0 +1,184 @@
+﻿
+namespace Проект
+{
+    partial class Trainess
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trainess));
+            this.dgv_Trainess = new System.Windows.Forms.DataGridView();
+            this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Family_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.First_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Middle_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Update_Trainess = new System.Windows.Forms.Button();
+            this.Search_Trainess = new System.Windows.Forms.Button();
+            this.Delete_Trainess = new System.Windows.Forms.Button();
+            this.Edit_Trainess = new System.Windows.Forms.Button();
+            this.Add_Trainess = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Trainess)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dgv_Trainess
+            // 
+            this.dgv_Trainess.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Trainess.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Class,
+            this.Family_name,
+            this.First_name,
+            this.Middle_name});
+            this.dgv_Trainess.Location = new System.Drawing.Point(83, 12);
+            this.dgv_Trainess.MultiSelect = false;
+            this.dgv_Trainess.Name = "dgv_Trainess";
+            this.dgv_Trainess.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Trainess.Size = new System.Drawing.Size(398, 262);
+            this.dgv_Trainess.TabIndex = 0;
+            // 
+            // Class
+            // 
+            this.Class.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Class.HeaderText = "Класс";
+            this.Class.Name = "Class";
+            // 
+            // Family_name
+            // 
+            this.Family_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Family_name.HeaderText = "Фамилия";
+            this.Family_name.Name = "Family_name";
+            // 
+            // First_name
+            // 
+            this.First_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.First_name.HeaderText = "Имя";
+            this.First_name.Name = "First_name";
+            // 
+            // Middle_name
+            // 
+            this.Middle_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Middle_name.HeaderText = "Отчество";
+            this.Middle_name.Name = "Middle_name";
+            // 
+            // Update_Trainess
+            // 
+            this.Update_Trainess.BackColor = System.Drawing.Color.Transparent;
+            this.Update_Trainess.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Update_Trainess.BackgroundImage")));
+            this.Update_Trainess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Update_Trainess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update_Trainess.Location = new System.Drawing.Point(12, 12);
+            this.Update_Trainess.Name = "Update_Trainess";
+            this.Update_Trainess.Size = new System.Drawing.Size(46, 43);
+            this.Update_Trainess.TabIndex = 5;
+            this.Update_Trainess.UseVisualStyleBackColor = false;
+            this.Update_Trainess.Click += new System.EventHandler(this.Update_Trainess_Click);
+            // 
+            // Search_Trainess
+            // 
+            this.Search_Trainess.BackColor = System.Drawing.Color.Transparent;
+            this.Search_Trainess.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Search_Trainess.BackgroundImage")));
+            this.Search_Trainess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Search_Trainess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Search_Trainess.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Search_Trainess.Location = new System.Drawing.Point(12, 61);
+            this.Search_Trainess.Name = "Search_Trainess";
+            this.Search_Trainess.Size = new System.Drawing.Size(46, 40);
+            this.Search_Trainess.TabIndex = 4;
+            this.Search_Trainess.UseVisualStyleBackColor = false;
+            this.Search_Trainess.Click += new System.EventHandler(this.Search_Trainess_Click);
+            // 
+            // Delete_Trainess
+            // 
+            this.Delete_Trainess.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Delete_Trainess.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Delete_Trainess.BackgroundImage")));
+            this.Delete_Trainess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Delete_Trainess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete_Trainess.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Delete_Trainess.Location = new System.Drawing.Point(12, 205);
+            this.Delete_Trainess.Name = "Delete_Trainess";
+            this.Delete_Trainess.Size = new System.Drawing.Size(46, 40);
+            this.Delete_Trainess.TabIndex = 3;
+            this.Delete_Trainess.UseVisualStyleBackColor = false;
+            this.Delete_Trainess.Click += new System.EventHandler(this.Delete_Trainess_Click);
+            // 
+            // Edit_Trainess
+            // 
+            this.Edit_Trainess.BackColor = System.Drawing.Color.Transparent;
+            this.Edit_Trainess.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Edit_Trainess.BackgroundImage")));
+            this.Edit_Trainess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Edit_Trainess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Edit_Trainess.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Edit_Trainess.Location = new System.Drawing.Point(12, 158);
+            this.Edit_Trainess.Name = "Edit_Trainess";
+            this.Edit_Trainess.Size = new System.Drawing.Size(46, 41);
+            this.Edit_Trainess.TabIndex = 2;
+            this.Edit_Trainess.UseVisualStyleBackColor = false;
+            // 
+            // Add_Trainess
+            // 
+            this.Add_Trainess.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_Trainess.BackgroundImage")));
+            this.Add_Trainess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Add_Trainess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add_Trainess.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Add_Trainess.Location = new System.Drawing.Point(12, 107);
+            this.Add_Trainess.Name = "Add_Trainess";
+            this.Add_Trainess.Size = new System.Drawing.Size(46, 41);
+            this.Add_Trainess.TabIndex = 1;
+            this.Add_Trainess.UseVisualStyleBackColor = true;
+            this.Add_Trainess.Click += new System.EventHandler(this.Add_Trainess_Click);
+            // 
+            // Trainess
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(491, 283);
+            this.Controls.Add(this.Update_Trainess);
+            this.Controls.Add(this.Search_Trainess);
+            this.Controls.Add(this.Delete_Trainess);
+            this.Controls.Add(this.Edit_Trainess);
+            this.Controls.Add(this.Add_Trainess);
+            this.Controls.Add(this.dgv_Trainess);
+            this.Name = "Trainess";
+            this.Text = "Обучающиеся";
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Trainess)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.DataGridView dgv_Trainess;
+        private System.Windows.Forms.Button Add_Trainess;
+        private System.Windows.Forms.Button Edit_Trainess;
+        private System.Windows.Forms.Button Delete_Trainess;
+        private System.Windows.Forms.Button Search_Trainess;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Class;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Family_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn First_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Middle_name;
+        private System.Windows.Forms.Button Update_Trainess;
+    }
+}
