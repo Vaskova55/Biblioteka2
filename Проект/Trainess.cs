@@ -27,7 +27,8 @@ namespace Проект
         {
             foreach (DataTrainess listTreiness in DataTrainess.Select())
             {
-                dgv_Trainess.Rows.Add(listTreiness.Class, listTreiness.Family_name, listTreiness.First_name, listTreiness.Middle_name);
+                int r = dgv_Trainess.Rows.Add(listTreiness.Class, listTreiness.Family_name, listTreiness.First_name, listTreiness.Middle_name);
+                dgv_Trainess.Rows[r].Tag = listTreiness;
             }
         }
 

@@ -31,56 +31,37 @@ namespace Проект
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Issuance));
             this.dgv_Issuance = new System.Windows.Forms.DataGridView();
-            this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Family_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.First_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Middle_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Update_Issuance = new System.Windows.Forms.Button();
             this.Serch_Issuance = new System.Windows.Forms.Button();
             this.Delete_Issuance = new System.Windows.Forms.Button();
             this.Edit_Issuance = new System.Windows.Forms.Button();
             this.Add_Issuance = new System.Windows.Forms.Button();
+            this.Сlass = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.family_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.first_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name_book = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date_of_issue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Issuance)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_Issuance
             // 
+            this.dgv_Issuance.AllowUserToAddRows = false;
+            this.dgv_Issuance.AllowUserToDeleteRows = false;
             this.dgv_Issuance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Issuance.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Class,
-            this.Family_name,
-            this.First_name,
-            this.Middle_name});
+            this.Сlass,
+            this.family_name,
+            this.first_name,
+            this.name_book,
+            this.date_of_issue});
             this.dgv_Issuance.Location = new System.Drawing.Point(83, 12);
             this.dgv_Issuance.MultiSelect = false;
             this.dgv_Issuance.Name = "dgv_Issuance";
+            this.dgv_Issuance.ReadOnly = true;
             this.dgv_Issuance.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Issuance.Size = new System.Drawing.Size(398, 262);
             this.dgv_Issuance.TabIndex = 6;
-            // 
-            // Class
-            // 
-            this.Class.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Class.HeaderText = "Класс";
-            this.Class.Name = "Class";
-            // 
-            // Family_name
-            // 
-            this.Family_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Family_name.HeaderText = "Фамилия";
-            this.Family_name.Name = "Family_name";
-            // 
-            // First_name
-            // 
-            this.First_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.First_name.HeaderText = "Имя";
-            this.First_name.Name = "First_name";
-            // 
-            // Middle_name
-            // 
-            this.Middle_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Middle_name.HeaderText = "Отчество";
-            this.Middle_name.Name = "Middle_name";
             // 
             // Update_Issuance
             // 
@@ -145,6 +126,41 @@ namespace Проект
             this.Add_Issuance.TabIndex = 7;
             this.Add_Issuance.UseVisualStyleBackColor = true;
             // 
+            // Сlass
+            // 
+            this.Сlass.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Сlass.HeaderText = "Класс";
+            this.Сlass.Name = "Сlass";
+            this.Сlass.ReadOnly = true;
+            // 
+            // family_name
+            // 
+            this.family_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.family_name.HeaderText = "Фамилия";
+            this.family_name.Name = "family_name";
+            this.family_name.ReadOnly = true;
+            // 
+            // first_name
+            // 
+            this.first_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.first_name.HeaderText = "Имя";
+            this.first_name.Name = "first_name";
+            this.first_name.ReadOnly = true;
+            // 
+            // name_book
+            // 
+            this.name_book.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.name_book.HeaderText = "Название книги";
+            this.name_book.Name = "name_book";
+            this.name_book.ReadOnly = true;
+            // 
+            // date_of_issue
+            // 
+            this.date_of_issue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.date_of_issue.HeaderText = "Дата выдачи";
+            this.date_of_issue.Name = "date_of_issue";
+            this.date_of_issue.ReadOnly = true;
+            // 
             // Issuance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,9 +188,10 @@ namespace Проект
         private System.Windows.Forms.Button Edit_Issuance;
         private System.Windows.Forms.Button Add_Issuance;
         private System.Windows.Forms.DataGridView dgv_Issuance;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Class;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Family_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn First_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Middle_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Сlass;
+        private System.Windows.Forms.DataGridViewTextBoxColumn family_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn first_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name_book;
+        private System.Windows.Forms.DataGridViewTextBoxColumn date_of_issue;
     }
 }

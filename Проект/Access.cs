@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Проект.Classes;
 
 namespace Проект
 {
@@ -19,8 +20,20 @@ namespace Проект
 
         private void Ok_Click(object sender, EventArgs e)
         {
-            Connection f_con = new Connection();
-            f_con.ShowDialog();
+            if (DataUser.Login(Login_Access.Text, Pass_Access.Text, out DataUser listUser))
+            {
+                if (listUser.access_level == 1)
+                {
+                    Connection f_con = new Connection();
+                    f_con.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Неверный логин или пароль!");
+                }
+            }
+            else
+            { MessageBox.Show("Неверный логин или пароль!"); }
         }
     }
 }
