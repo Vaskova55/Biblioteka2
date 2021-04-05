@@ -42,7 +42,7 @@ namespace Проект.Classes
 
         public void Delete()
         {
-            BDConnection.Select("DELETE FROM `trainesses` WHERE (`idTrainess` = '"+ idTrainess + "');");
+            BDConnection.Select("DELETE FROM biblioteka.Trainesses WHERE(`id_20 - 21_kl` = '13')");
         }
 
         public static void TrainessAdd(int Class, string Family_name, string First_name, string Middle_name)

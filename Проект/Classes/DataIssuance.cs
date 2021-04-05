@@ -27,7 +27,7 @@ namespace Проект.Classes
         public static List<DataIssuance> Select()
         {
             List<DataIssuance> listIssuance = new List<DataIssuance>();
-            DataTable data = BDConnection.Select("SELECT * FROM issuance;");
+            DataTable data = BDConnection.Select("SELECT * FROM ISP333_VaskovaAN_biblioteka.issuance Inner join trainess left issuance.trainess = trainess.idTrainess where trainess = trainess.idTrainess;"); //?????????
         }
     }
 }
