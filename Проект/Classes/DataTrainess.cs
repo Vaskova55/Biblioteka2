@@ -16,10 +16,10 @@ namespace Проект.Classes
 
         public DataTrainess(DataRow row)
         {
-            Class = Convert.ToInt32(row[Class]);
-            Family_name = Convert.ToString(row[Family_name]);
-            First_name = Convert.ToString(row[First_name]);
-            Middle_name = Convert.ToString(row[Middle_name]);
+            Class = Convert.ToInt32(row["class"]);
+            Family_name = Convert.ToString(row["family_name"]);
+            First_name = Convert.ToString(row["first_name"]);
+            Middle_name = Convert.ToString(row["middle_name"]);
         }
 
         internal static void TrainessAdd()
@@ -30,7 +30,7 @@ namespace Проект.Classes
         public static List<DataTrainess> Select()
         {
             List<DataTrainess> listTrainess = new List<DataTrainess>();
-            DataTable data = BDConnection.Select("SELECT * FROM Trainesses;");
+            DataTable data = BDConnection.Select("SELECT * FROM trainesses;");
             foreach (DataRow row in data.Rows)
             {
                 listTrainess.Add(new DataTrainess(row));
@@ -39,12 +39,12 @@ namespace Проект.Classes
         }
         public void Delete()
         {
-            BDConnection.Select("DELETE FROM biblioteka.Trainesses WHERE(`id_20 - 21_kl` = '13')");
+            BDConnection.Select("DELETE FROM `trainesses` WHERE (`idTrainess` = '1');");
         }
 
         public static void TrainessAdd(int Class, string Family_name, string First_name, string Middle_name)
         {
-            BDConnection.Select("INSERT INTO Trainesses (`Class`, `Family_name`, `First_name`, `Middle_name`) " +
+            BDConnection.Select("INSERT INTO trainesses (`class`, `family_name`, `first_name`, `middle_name`) " +
                 "VALUES ('"+ Class +"', '"+ Family_name +"', '"+ First_name +"', '"+ Middle_name +"');");
         }
     } 

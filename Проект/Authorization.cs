@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Проект.Classes;
 
 namespace Проект
 {
@@ -25,8 +26,20 @@ namespace Проект
 
         private void Ok_Autorization_Click(object sender, EventArgs e)
         {
-            Home_page f_hp = new Home_page();
-            f_hp.Show();
+            if (DataUser.Login(tb_login.Text, tb_password.Text, out DataUser listUser))
+            {
+                if (listUser.access_level == 1)
+                {
+                    Home_page f_hp = new Home_page();
+                    f_hp.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Пожалуйста, проверьте ваш логин и пароль");
+                }
+            }
+            else
+            { MessageBox.Show("Неверный логин или пароль!"); }
         }
     }
 }
