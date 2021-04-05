@@ -20,7 +20,7 @@ namespace Проект
 
         private void Ok_AddTrainess_Click(object sender, EventArgs e)
         {
-            DataTrainess.TrainessAdd(Convert.ToInt32(Class.Text), Family_name.Text, First_name.Text, Middle_name.Text);
+            DataTrainess.TrainessAdd(Convert.ToInt32(nud_AddTrainess_class.Value), tb_AddTrainess_fam.Text, tb_AddTrainess_name.Text, tb3_AddTrainess_middle.Text);
         }
     }
 }

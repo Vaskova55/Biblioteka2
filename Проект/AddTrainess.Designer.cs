@@ -30,18 +30,18 @@ namespace Проект
         private void InitializeComponent()
         {
             this.lb2_AddTrainess = new System.Windows.Forms.Label();
-            this.nud_AddTrainess = new System.Windows.Forms.NumericUpDown();
+            this.nud_AddTrainess_class = new System.Windows.Forms.NumericUpDown();
             this.lb3_AddTrainess = new System.Windows.Forms.Label();
             this.lb4_AddTrainess = new System.Windows.Forms.Label();
             this.lb5_AddTrainess = new System.Windows.Forms.Label();
             this.lb6_AddTrainess = new System.Windows.Forms.Label();
-            this.tb1_AddTrainess = new System.Windows.Forms.TextBox();
-            this.tb3_AddTrainess = new System.Windows.Forms.TextBox();
-            this.tb2_AddTrainess = new System.Windows.Forms.TextBox();
-            this.cb_AddTrainess = new System.Windows.Forms.CheckBox();
+            this.tb_AddTrainess_fam = new System.Windows.Forms.TextBox();
+            this.tb3_AddTrainess_middle = new System.Windows.Forms.TextBox();
+            this.tb_AddTrainess_name = new System.Windows.Forms.TextBox();
+            this.cb_AddTrainess_noMiddle = new System.Windows.Forms.CheckBox();
             this.Ok_AddTrainess = new System.Windows.Forms.Button();
             this.lb1_AddTrainess = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_AddTrainess)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_AddTrainess_class)).BeginInit();
             this.SuspendLayout();
             // 
             // lb2_AddTrainess
@@ -54,12 +54,12 @@ namespace Проект
             this.lb2_AddTrainess.Text = "Пожалуйста, введите данные для добавления.";
             this.lb2_AddTrainess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // nud_AddTrainess
+            // nud_AddTrainess_class
             // 
-            this.nud_AddTrainess.Location = new System.Drawing.Point(69, 172);
-            this.nud_AddTrainess.Name = "nud_AddTrainess";
-            this.nud_AddTrainess.Size = new System.Drawing.Size(128, 20);
-            this.nud_AddTrainess.TabIndex = 12;
+            this.nud_AddTrainess_class.Location = new System.Drawing.Point(69, 172);
+            this.nud_AddTrainess_class.Name = "nud_AddTrainess_class";
+            this.nud_AddTrainess_class.Size = new System.Drawing.Size(128, 20);
+            this.nud_AddTrainess_class.TabIndex = 12;
             // 
             // lb3_AddTrainess
             // 
@@ -101,40 +101,40 @@ namespace Проект
             this.lb6_AddTrainess.TabIndex = 16;
             this.lb6_AddTrainess.Text = "Отчество:";
             // 
-            // tb1_AddTrainess
+            // tb_AddTrainess_fam
             // 
-            this.tb1_AddTrainess.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tb1_AddTrainess.Location = new System.Drawing.Point(69, 218);
-            this.tb1_AddTrainess.Name = "tb1_AddTrainess";
-            this.tb1_AddTrainess.Size = new System.Drawing.Size(128, 20);
-            this.tb1_AddTrainess.TabIndex = 17;
+            this.tb_AddTrainess_fam.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tb_AddTrainess_fam.Location = new System.Drawing.Point(69, 218);
+            this.tb_AddTrainess_fam.Name = "tb_AddTrainess_fam";
+            this.tb_AddTrainess_fam.Size = new System.Drawing.Size(128, 20);
+            this.tb_AddTrainess_fam.TabIndex = 17;
             // 
-            // tb3_AddTrainess
+            // tb3_AddTrainess_middle
             // 
-            this.tb3_AddTrainess.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tb3_AddTrainess.Location = new System.Drawing.Point(69, 310);
-            this.tb3_AddTrainess.Name = "tb3_AddTrainess";
-            this.tb3_AddTrainess.Size = new System.Drawing.Size(128, 20);
-            this.tb3_AddTrainess.TabIndex = 18;
+            this.tb3_AddTrainess_middle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tb3_AddTrainess_middle.Location = new System.Drawing.Point(69, 310);
+            this.tb3_AddTrainess_middle.Name = "tb3_AddTrainess_middle";
+            this.tb3_AddTrainess_middle.Size = new System.Drawing.Size(128, 20);
+            this.tb3_AddTrainess_middle.TabIndex = 18;
             // 
-            // tb2_AddTrainess
+            // tb_AddTrainess_name
             // 
-            this.tb2_AddTrainess.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tb2_AddTrainess.Location = new System.Drawing.Point(69, 264);
-            this.tb2_AddTrainess.Name = "tb2_AddTrainess";
-            this.tb2_AddTrainess.Size = new System.Drawing.Size(128, 20);
-            this.tb2_AddTrainess.TabIndex = 19;
+            this.tb_AddTrainess_name.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tb_AddTrainess_name.Location = new System.Drawing.Point(69, 264);
+            this.tb_AddTrainess_name.Name = "tb_AddTrainess_name";
+            this.tb_AddTrainess_name.Size = new System.Drawing.Size(128, 20);
+            this.tb_AddTrainess_name.TabIndex = 19;
             // 
-            // cb_AddTrainess
+            // cb_AddTrainess_noMiddle
             // 
-            this.cb_AddTrainess.AutoSize = true;
-            this.cb_AddTrainess.ForeColor = System.Drawing.Color.Black;
-            this.cb_AddTrainess.Location = new System.Drawing.Point(69, 336);
-            this.cb_AddTrainess.Name = "cb_AddTrainess";
-            this.cb_AddTrainess.Size = new System.Drawing.Size(96, 17);
-            this.cb_AddTrainess.TabIndex = 20;
-            this.cb_AddTrainess.Text = "Нет отчества.";
-            this.cb_AddTrainess.UseVisualStyleBackColor = true;
+            this.cb_AddTrainess_noMiddle.AutoSize = true;
+            this.cb_AddTrainess_noMiddle.ForeColor = System.Drawing.Color.Black;
+            this.cb_AddTrainess_noMiddle.Location = new System.Drawing.Point(69, 336);
+            this.cb_AddTrainess_noMiddle.Name = "cb_AddTrainess_noMiddle";
+            this.cb_AddTrainess_noMiddle.Size = new System.Drawing.Size(96, 17);
+            this.cb_AddTrainess_noMiddle.TabIndex = 20;
+            this.cb_AddTrainess_noMiddle.Text = "Нет отчества.";
+            this.cb_AddTrainess_noMiddle.UseVisualStyleBackColor = true;
             // 
             // Ok_AddTrainess
             // 
@@ -166,20 +166,20 @@ namespace Проект
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(266, 422);
             this.Controls.Add(this.Ok_AddTrainess);
-            this.Controls.Add(this.cb_AddTrainess);
-            this.Controls.Add(this.tb2_AddTrainess);
-            this.Controls.Add(this.tb3_AddTrainess);
-            this.Controls.Add(this.tb1_AddTrainess);
+            this.Controls.Add(this.cb_AddTrainess_noMiddle);
+            this.Controls.Add(this.tb_AddTrainess_name);
+            this.Controls.Add(this.tb3_AddTrainess_middle);
+            this.Controls.Add(this.tb_AddTrainess_fam);
             this.Controls.Add(this.lb6_AddTrainess);
             this.Controls.Add(this.lb5_AddTrainess);
             this.Controls.Add(this.lb4_AddTrainess);
             this.Controls.Add(this.lb3_AddTrainess);
-            this.Controls.Add(this.nud_AddTrainess);
+            this.Controls.Add(this.nud_AddTrainess_class);
             this.Controls.Add(this.lb2_AddTrainess);
             this.Controls.Add(this.lb1_AddTrainess);
             this.Name = "AddTrainess";
             this.Text = "Новые данные";
-            ((System.ComponentModel.ISupportInitialize)(this.nud_AddTrainess)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_AddTrainess_class)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,15 +187,15 @@ namespace Проект
 
         #endregion
         private System.Windows.Forms.Label lb2_AddTrainess;
-        private System.Windows.Forms.NumericUpDown nud_AddTrainess;
+        private System.Windows.Forms.NumericUpDown nud_AddTrainess_class;
         private System.Windows.Forms.Label lb3_AddTrainess;
         private System.Windows.Forms.Label lb4_AddTrainess;
         private System.Windows.Forms.Label lb5_AddTrainess;
         private System.Windows.Forms.Label lb6_AddTrainess;
-        private System.Windows.Forms.TextBox tb1_AddTrainess;
-        private System.Windows.Forms.TextBox tb3_AddTrainess;
-        private System.Windows.Forms.TextBox tb2_AddTrainess;
-        private System.Windows.Forms.CheckBox cb_AddTrainess;
+        private System.Windows.Forms.TextBox tb_AddTrainess_fam;
+        private System.Windows.Forms.TextBox tb3_AddTrainess_middle;
+        private System.Windows.Forms.TextBox tb_AddTrainess_name;
+        private System.Windows.Forms.CheckBox cb_AddTrainess_noMiddle;
         private System.Windows.Forms.Button Ok_AddTrainess;
         private System.Windows.Forms.Label lb1_AddTrainess;
     }
