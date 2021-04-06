@@ -32,10 +32,13 @@ namespace Проект
                 {
                     Home_page f_hp = new Home_page();
                     f_hp.Show();
+                    Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Пожалуйста, проверьте ваш логин и пароль");
+                    Student_access f_sa = new Student_access();
+                    f_sa.Show();
+                    Hide();
                 }
             }
             else

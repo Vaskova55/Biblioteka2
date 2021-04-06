@@ -34,5 +34,12 @@ namespace Проект
             Issuance f_is = new Issuance();
             f_is.Show();
         }
+
+        private void tsmi2_Exit_Click(object sender, EventArgs e)
+        {
+            Authorization f_a = new Authorization();
+            f_a.Show();
+            Hide();
+        }
     }
 }

@@ -29,7 +29,7 @@ namespace Проект
                 }
                 else
                 {
-                    MessageBox.Show("Неверный логин или пароль!");
+                    MessageBox.Show("Ваш пользователь не имеет доступа!");
                 }
             }
             else

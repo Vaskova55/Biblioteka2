@@ -29,11 +29,13 @@ namespace Проект
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_page));
             this.dgv_Home_page = new System.Windows.Forms.DataGridView();
             this.ms_Home_page = new System.Windows.Forms.MenuStrip();
             this.tsmi1_Issuance = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi2_Library = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi3_Treiness = new System.Windows.Forms.ToolStripMenuItem();
+            this.списаннаяЛитератураToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi4_Accounting_book = new System.Windows.Forms.ToolStripMenuItem();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.lb1_Home_page = new System.Windows.Forms.Label();
@@ -52,7 +54,7 @@ namespace Проект
             this.lbl7_Home_page = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lbl6_Home_page = new System.Windows.Forms.Label();
-            this.списаннаяЛитератураToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi2_Exit = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Home_page)).BeginInit();
             this.ms_Home_page.SuspendLayout();
             this.SuspendLayout();
@@ -78,7 +80,8 @@ namespace Проект
             this.tsmi2_Library,
             this.tsmi3_Treiness,
             this.списаннаяЛитератураToolStripMenuItem,
-            this.tsmi4_Accounting_book});
+            this.tsmi4_Accounting_book,
+            this.tsmi2_Exit});
             this.ms_Home_page.Location = new System.Drawing.Point(0, 0);
             this.ms_Home_page.Name = "ms_Home_page";
             this.ms_Home_page.Size = new System.Drawing.Size(839, 38);
@@ -105,6 +108,12 @@ namespace Проект
             this.tsmi3_Treiness.Size = new System.Drawing.Size(126, 34);
             this.tsmi3_Treiness.Text = "Обучающиеся";
             this.tsmi3_Treiness.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            // 
+            // списаннаяЛитератураToolStripMenuItem
+            // 
+            this.списаннаяЛитератураToolStripMenuItem.Name = "списаннаяЛитератураToolStripMenuItem";
+            this.списаннаяЛитератураToolStripMenuItem.Size = new System.Drawing.Size(184, 34);
+            this.списаннаяЛитератураToolStripMenuItem.Text = "Списанная литература";
             // 
             // tsmi4_Accounting_book
             // 
@@ -280,11 +289,13 @@ namespace Проект
             this.lbl6_Home_page.Text = "Вывод в таблицу истории читателя:";
             this.lbl6_Home_page.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // списаннаяЛитератураToolStripMenuItem
+            // tsmi2_Exit
             // 
-            this.списаннаяЛитератураToolStripMenuItem.Name = "списаннаяЛитератураToolStripMenuItem";
-            this.списаннаяЛитератураToolStripMenuItem.Size = new System.Drawing.Size(184, 34);
-            this.списаннаяЛитератураToolStripMenuItem.Text = "Списанная литература";
+            this.tsmi2_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tsmi2_Exit.BackgroundImage")));
+            this.tsmi2_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tsmi2_Exit.Name = "tsmi2_Exit";
+            this.tsmi2_Exit.Size = new System.Drawing.Size(12, 34);
+            this.tsmi2_Exit.Click += new System.EventHandler(this.tsmi2_Exit_Click);
             // 
             // Home_page
             // 
@@ -347,5 +358,6 @@ namespace Проект
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lbl6_Home_page;
         private System.Windows.Forms.ToolStripMenuItem списаннаяЛитератураToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmi2_Exit;
     }
 }
