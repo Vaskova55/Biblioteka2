@@ -16,5 +16,10 @@ namespace Проект
         {
             InitializeComponent();
         }
+
+        private void tb_SearchTrainess_TextChanged(object sender, EventArgs e)
+        {
+            Upda
+        }
     }
 }

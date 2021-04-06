@@ -36,10 +36,13 @@ namespace Проект
             this.First_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Middle_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Update_Trainess = new System.Windows.Forms.Button();
-            this.Search_Trainess = new System.Windows.Forms.Button();
             this.Delete_Trainess = new System.Windows.Forms.Button();
             this.Edit_Trainess = new System.Windows.Forms.Button();
             this.Add_Trainess = new System.Windows.Forms.Button();
+            this.tb_SearchTrainess = new System.Windows.Forms.TextBox();
+            this.lb1_Trainess = new System.Windows.Forms.Label();
+            this.Search_SearchTrainess = new System.Windows.Forms.Label();
+            this.Export_Trainess = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Trainess)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,11 +54,11 @@ namespace Проект
             this.Family_name,
             this.First_name,
             this.Middle_name});
-            this.dgv_Trainess.Location = new System.Drawing.Point(83, 12);
+            this.dgv_Trainess.Location = new System.Drawing.Point(12, 93);
             this.dgv_Trainess.MultiSelect = false;
             this.dgv_Trainess.Name = "dgv_Trainess";
             this.dgv_Trainess.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Trainess.Size = new System.Drawing.Size(398, 262);
+            this.dgv_Trainess.Size = new System.Drawing.Size(475, 262);
             this.dgv_Trainess.TabIndex = 0;
             // 
             // Class
@@ -88,26 +91,12 @@ namespace Проект
             this.Update_Trainess.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Update_Trainess.BackgroundImage")));
             this.Update_Trainess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Update_Trainess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update_Trainess.Location = new System.Drawing.Point(12, 12);
+            this.Update_Trainess.Location = new System.Drawing.Point(22, 25);
             this.Update_Trainess.Name = "Update_Trainess";
             this.Update_Trainess.Size = new System.Drawing.Size(46, 43);
             this.Update_Trainess.TabIndex = 5;
             this.Update_Trainess.UseVisualStyleBackColor = false;
             this.Update_Trainess.Click += new System.EventHandler(this.Update_Trainess_Click);
-            // 
-            // Search_Trainess
-            // 
-            this.Search_Trainess.BackColor = System.Drawing.Color.Transparent;
-            this.Search_Trainess.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Search_Trainess.BackgroundImage")));
-            this.Search_Trainess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Search_Trainess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Search_Trainess.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Search_Trainess.Location = new System.Drawing.Point(12, 61);
-            this.Search_Trainess.Name = "Search_Trainess";
-            this.Search_Trainess.Size = new System.Drawing.Size(46, 40);
-            this.Search_Trainess.TabIndex = 4;
-            this.Search_Trainess.UseVisualStyleBackColor = false;
-            this.Search_Trainess.Click += new System.EventHandler(this.Search_Trainess_Click);
             // 
             // Delete_Trainess
             // 
@@ -116,9 +105,9 @@ namespace Проект
             this.Delete_Trainess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Delete_Trainess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Delete_Trainess.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Delete_Trainess.Location = new System.Drawing.Point(12, 205);
+            this.Delete_Trainess.Location = new System.Drawing.Point(178, 25);
             this.Delete_Trainess.Name = "Delete_Trainess";
-            this.Delete_Trainess.Size = new System.Drawing.Size(46, 40);
+            this.Delete_Trainess.Size = new System.Drawing.Size(46, 44);
             this.Delete_Trainess.TabIndex = 3;
             this.Delete_Trainess.UseVisualStyleBackColor = false;
             this.Delete_Trainess.Click += new System.EventHandler(this.Delete_Trainess_Click);
@@ -130,11 +119,12 @@ namespace Проект
             this.Edit_Trainess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Edit_Trainess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Edit_Trainess.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Edit_Trainess.Location = new System.Drawing.Point(12, 158);
+            this.Edit_Trainess.Location = new System.Drawing.Point(126, 25);
             this.Edit_Trainess.Name = "Edit_Trainess";
-            this.Edit_Trainess.Size = new System.Drawing.Size(46, 41);
+            this.Edit_Trainess.Size = new System.Drawing.Size(46, 43);
             this.Edit_Trainess.TabIndex = 2;
             this.Edit_Trainess.UseVisualStyleBackColor = false;
+            this.Edit_Trainess.Click += new System.EventHandler(this.Edit_Trainess_Click);
             // 
             // Add_Trainess
             // 
@@ -142,21 +132,65 @@ namespace Проект
             this.Add_Trainess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Add_Trainess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add_Trainess.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Add_Trainess.Location = new System.Drawing.Point(12, 107);
+            this.Add_Trainess.Location = new System.Drawing.Point(74, 25);
             this.Add_Trainess.Name = "Add_Trainess";
-            this.Add_Trainess.Size = new System.Drawing.Size(46, 41);
+            this.Add_Trainess.Size = new System.Drawing.Size(46, 43);
             this.Add_Trainess.TabIndex = 1;
             this.Add_Trainess.UseVisualStyleBackColor = true;
             this.Add_Trainess.Click += new System.EventHandler(this.Add_Trainess_Click);
+            // 
+            // tb_SearchTrainess
+            // 
+            this.tb_SearchTrainess.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tb_SearchTrainess.Location = new System.Drawing.Point(320, 40);
+            this.tb_SearchTrainess.Name = "tb_SearchTrainess";
+            this.tb_SearchTrainess.Size = new System.Drawing.Size(147, 20);
+            this.tb_SearchTrainess.TabIndex = 22;
+            // 
+            // lb1_Trainess
+            // 
+            this.lb1_Trainess.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb1_Trainess.Location = new System.Drawing.Point(319, 9);
+            this.lb1_Trainess.Name = "lb1_Trainess";
+            this.lb1_Trainess.Size = new System.Drawing.Size(151, 28);
+            this.lb1_Trainess.TabIndex = 23;
+            this.lb1_Trainess.Text = "Поиск данных.";
+            this.lb1_Trainess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Search_SearchTrainess
+            // 
+            this.Search_SearchTrainess.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Search_SearchTrainess.Location = new System.Drawing.Point(320, 63);
+            this.Search_SearchTrainess.Name = "Search_SearchTrainess";
+            this.Search_SearchTrainess.Size = new System.Drawing.Size(147, 27);
+            this.Search_SearchTrainess.TabIndex = 24;
+            this.Search_SearchTrainess.Text = "Больше параметров для поиска";
+            this.Search_SearchTrainess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Export_Trainess
+            // 
+            this.Export_Trainess.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Export_Trainess.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Export_Trainess.BackgroundImage")));
+            this.Export_Trainess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Export_Trainess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Export_Trainess.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Export_Trainess.Location = new System.Drawing.Point(230, 26);
+            this.Export_Trainess.Name = "Export_Trainess";
+            this.Export_Trainess.Size = new System.Drawing.Size(46, 43);
+            this.Export_Trainess.TabIndex = 29;
+            this.Export_Trainess.UseVisualStyleBackColor = false;
             // 
             // Trainess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(491, 283);
+            this.ClientSize = new System.Drawing.Size(499, 363);
+            this.Controls.Add(this.Export_Trainess);
+            this.Controls.Add(this.Search_SearchTrainess);
+            this.Controls.Add(this.lb1_Trainess);
+            this.Controls.Add(this.tb_SearchTrainess);
             this.Controls.Add(this.Update_Trainess);
-            this.Controls.Add(this.Search_Trainess);
             this.Controls.Add(this.Delete_Trainess);
             this.Controls.Add(this.Edit_Trainess);
             this.Controls.Add(this.Add_Trainess);
@@ -165,6 +199,7 @@ namespace Проект
             this.Text = "Обучающиеся";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Trainess)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -174,11 +209,14 @@ namespace Проект
         private System.Windows.Forms.Button Add_Trainess;
         private System.Windows.Forms.Button Edit_Trainess;
         private System.Windows.Forms.Button Delete_Trainess;
-        private System.Windows.Forms.Button Search_Trainess;
         private System.Windows.Forms.DataGridViewTextBoxColumn Class;
         private System.Windows.Forms.DataGridViewTextBoxColumn Family_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn First_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Middle_name;
         private System.Windows.Forms.Button Update_Trainess;
+        private System.Windows.Forms.TextBox tb_SearchTrainess;
+        private System.Windows.Forms.Label lb1_Trainess;
+        private System.Windows.Forms.Label Search_SearchTrainess;
+        private System.Windows.Forms.Button Export_Trainess;
     }
 }

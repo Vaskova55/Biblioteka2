@@ -36,7 +36,7 @@ namespace Проект
             this.lb5_AddTrainess = new System.Windows.Forms.Label();
             this.lb6_AddTrainess = new System.Windows.Forms.Label();
             this.tb_AddTrainess_fam = new System.Windows.Forms.TextBox();
-            this.tb3_AddTrainess_middle = new System.Windows.Forms.TextBox();
+            this.tb_AddTrainess_middle = new System.Windows.Forms.TextBox();
             this.tb_AddTrainess_name = new System.Windows.Forms.TextBox();
             this.cb_AddTrainess_noMiddle = new System.Windows.Forms.CheckBox();
             this.Ok_AddTrainess = new System.Windows.Forms.Button();
@@ -109,13 +109,13 @@ namespace Проект
             this.tb_AddTrainess_fam.Size = new System.Drawing.Size(128, 20);
             this.tb_AddTrainess_fam.TabIndex = 17;
             // 
-            // tb3_AddTrainess_middle
+            // tb_AddTrainess_middle
             // 
-            this.tb3_AddTrainess_middle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tb3_AddTrainess_middle.Location = new System.Drawing.Point(69, 310);
-            this.tb3_AddTrainess_middle.Name = "tb3_AddTrainess_middle";
-            this.tb3_AddTrainess_middle.Size = new System.Drawing.Size(128, 20);
-            this.tb3_AddTrainess_middle.TabIndex = 18;
+            this.tb_AddTrainess_middle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tb_AddTrainess_middle.Location = new System.Drawing.Point(69, 310);
+            this.tb_AddTrainess_middle.Name = "tb_AddTrainess_middle";
+            this.tb_AddTrainess_middle.Size = new System.Drawing.Size(128, 20);
+            this.tb_AddTrainess_middle.TabIndex = 18;
             // 
             // tb_AddTrainess_name
             // 
@@ -168,7 +168,7 @@ namespace Проект
             this.Controls.Add(this.Ok_AddTrainess);
             this.Controls.Add(this.cb_AddTrainess_noMiddle);
             this.Controls.Add(this.tb_AddTrainess_name);
-            this.Controls.Add(this.tb3_AddTrainess_middle);
+            this.Controls.Add(this.tb_AddTrainess_middle);
             this.Controls.Add(this.tb_AddTrainess_fam);
             this.Controls.Add(this.lb6_AddTrainess);
             this.Controls.Add(this.lb5_AddTrainess);
@@ -193,7 +193,7 @@ namespace Проект
         private System.Windows.Forms.Label lb5_AddTrainess;
         private System.Windows.Forms.Label lb6_AddTrainess;
         private System.Windows.Forms.TextBox tb_AddTrainess_fam;
-        private System.Windows.Forms.TextBox tb3_AddTrainess_middle;
+        private System.Windows.Forms.TextBox tb_AddTrainess_middle;
         private System.Windows.Forms.TextBox tb_AddTrainess_name;
         private System.Windows.Forms.CheckBox cb_AddTrainess_noMiddle;
         private System.Windows.Forms.Button Ok_AddTrainess;

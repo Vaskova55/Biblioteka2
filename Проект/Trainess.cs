@@ -25,7 +25,8 @@ namespace Проект
 
         private void UpdateData_Trainess()
         {
-            foreach (DataTrainess listTreiness in DataTrainess.Select())
+            dgv_Trainess.Rows.Clear();
+            foreach (DataTrainess listTreiness in DataTrainess.Select(tb_SearchTrainess.Text))
             {
                 int r = dgv_Trainess.Rows.Add(listTreiness.Class, listTreiness.Family_name, listTreiness.First_name, listTreiness.Middle_name);
                 dgv_Trainess.Rows[r].Tag = listTreiness;
@@ -52,6 +53,17 @@ namespace Проект
         {
             SearchTrainess f_st = new SearchTrainess();
             f_st.Show();
+        }
+
+        private void Edit_Trainess_Click(object sender, EventArgs e)
+        {
+            if (dgv_Trainess.SelectedRows.Count > 0)
+            {
+                DataTrainess trainess = dgv_Trainess.SelectedRows[0].Tag as DataTrainess;
+                AddTrainess f_at = new AddTrainess();
+                f_at.Show();
+                Update();
+            }
         }
     }
 }

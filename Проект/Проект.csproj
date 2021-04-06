@@ -106,6 +106,12 @@
     <Compile Include="SearchTrainess.Designer.cs">
       <DependentUpon>SearchTrainess.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student_access.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_access.Designer.cs">
+      <DependentUpon>Student_access.cs</DependentUpon>
+    </Compile>
     <Compile Include="Trainess.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SearchTrainess.resx">
       <DependentUpon>SearchTrainess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_access.resx">
+      <DependentUpon>Student_access.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Trainess.resx">
       <DependentUpon>Trainess.cs</DependentUpon>

@@ -29,10 +29,11 @@ namespace Проект.Classes
             throw new NotImplementedException();
         }
 
-        public static List<DataTrainess> Select()
+        public static List<DataTrainess> Select(string Search)
         {
+
             List<DataTrainess> listTrainess = new List<DataTrainess>();
-            DataTable data = BDConnection.Select("SELECT * FROM trainesses;");
+            DataTable data = BDConnection.Select("SELECT * FROM trainesses WHERE Family_name LIKE '%"+Search+"%';");
             foreach (DataRow row in data.Rows)
             {
                 listTrainess.Add(new DataTrainess(row));
@@ -42,13 +43,24 @@ namespace Проект.Classes
 
         public void Delete()
         {
-            BDConnection.Select("DELETE FROM biblioteka.Trainesses WHERE(`id_20 - 21_kl` = '13')");
+            BDConnection.Select("DELETE FROM trainesses WHERE(`idTrainess` = '"+ idTrainess + "')");
         }
 
         public static void TrainessAdd(int Class, string Family_name, string First_name, string Middle_name)
         {
             BDConnection.Select("INSERT INTO trainesses (`class`, `family_name`, `first_name`, `middle_name`) " +
                 "VALUES ('"+ Class +"', '"+ Family_name +"', '"+ First_name +"', '"+ Middle_name +"');");
+        }
+
+        public static void TrainessUpdat(int idTrainess, int Class, string Family_name, string First_name, string Middle_name)
+        {
+            BDConnection.Select("UPDATE `trainesses` SET `class` = '"+ Class + "'," +
+                " `family_name` = '"+ Family_name + "', `first_name` = '"+ First_name + "', `middle_name` = '"+ Middle_name + "' WHERE (`idTrainess` = '"+ idTrainess + "');");
+            this.idTrainess = idTrainess;
+            this.Class = Class;
+            this.Family_name = Family_name;
+            this.First_name = First_name;
+            this.Middle_name = Middle_name;
         }
     } 
 }

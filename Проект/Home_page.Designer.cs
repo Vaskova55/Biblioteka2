@@ -52,6 +52,7 @@ namespace Проект
             this.lbl7_Home_page = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lbl6_Home_page = new System.Windows.Forms.Label();
+            this.списаннаяЛитератураToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Home_page)).BeginInit();
             this.ms_Home_page.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +77,7 @@ namespace Проект
             this.tsmi1_Issuance,
             this.tsmi2_Library,
             this.tsmi3_Treiness,
+            this.списаннаяЛитератураToolStripMenuItem,
             this.tsmi4_Accounting_book});
             this.ms_Home_page.Location = new System.Drawing.Point(0, 0);
             this.ms_Home_page.Name = "ms_Home_page";
@@ -278,6 +280,12 @@ namespace Проект
             this.lbl6_Home_page.Text = "Вывод в таблицу истории читателя:";
             this.lbl6_Home_page.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // списаннаяЛитератураToolStripMenuItem
+            // 
+            this.списаннаяЛитератураToolStripMenuItem.Name = "списаннаяЛитератураToolStripMenuItem";
+            this.списаннаяЛитератураToolStripMenuItem.Size = new System.Drawing.Size(184, 34);
+            this.списаннаяЛитератураToolStripMenuItem.Text = "Списанная литература";
+            // 
             // Home_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,5 +346,6 @@ namespace Проект
         private System.Windows.Forms.Label lbl7_Home_page;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lbl6_Home_page;
+        private System.Windows.Forms.ToolStripMenuItem списаннаяЛитератураToolStripMenuItem;
     }
 }

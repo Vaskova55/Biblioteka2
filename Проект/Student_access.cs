@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Проект
 {
-    public partial class Issuance : Form
+    public partial class Student_access : Form
     {
-        public Issuance()
+        public Student_access()
         {
             InitializeComponent();
-        }
-
-        private void Update_Issuance_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

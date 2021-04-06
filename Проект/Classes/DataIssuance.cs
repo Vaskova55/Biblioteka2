@@ -28,6 +28,13 @@ namespace Проект.Classes
         {
             List<DataIssuance> listIssuance = new List<DataIssuance>();
             DataTable data = BDConnection.Select("SELECT * FROM ISP333_VaskovaAN_biblioteka.issuance Inner join trainess left issuance.trainess = trainess.idTrainess where trainess = trainess.idTrainess;"); //?????????
+            foreach (DataRow row in data.Rows)
+            {
+                listIssuance.Add(new DataIssuance(row));
+            }
+            return listIssuance;
         }
+
+
     }
 }
