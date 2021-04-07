@@ -37,6 +37,7 @@ namespace Проект
             this.tsmi3_Treiness = new System.Windows.Forms.ToolStripMenuItem();
             this.списаннаяЛитератураToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi4_Accounting_book = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi2_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.lb1_Home_page = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -54,7 +55,6 @@ namespace Проект
             this.lbl7_Home_page = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lbl6_Home_page = new System.Windows.Forms.Label();
-            this.tsmi2_Exit = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Home_page)).BeginInit();
             this.ms_Home_page.SuspendLayout();
             this.SuspendLayout();
@@ -120,6 +120,15 @@ namespace Проект
             this.tsmi4_Accounting_book.Name = "tsmi4_Accounting_book";
             this.tsmi4_Accounting_book.Size = new System.Drawing.Size(124, 34);
             this.tsmi4_Accounting_book.Text = "Учётная книга";
+            this.tsmi4_Accounting_book.Click += new System.EventHandler(this.tsmi4_Accounting_book_Click);
+            // 
+            // tsmi2_Exit
+            // 
+            this.tsmi2_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tsmi2_Exit.BackgroundImage")));
+            this.tsmi2_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tsmi2_Exit.Name = "tsmi2_Exit";
+            this.tsmi2_Exit.Size = new System.Drawing.Size(12, 34);
+            this.tsmi2_Exit.Click += new System.EventHandler(this.tsmi2_Exit_Click);
             // 
             // radioButton1
             // 
@@ -288,14 +297,6 @@ namespace Проект
             this.lbl6_Home_page.TabIndex = 25;
             this.lbl6_Home_page.Text = "Вывод в таблицу истории читателя:";
             this.lbl6_Home_page.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tsmi2_Exit
-            // 
-            this.tsmi2_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tsmi2_Exit.BackgroundImage")));
-            this.tsmi2_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tsmi2_Exit.Name = "tsmi2_Exit";
-            this.tsmi2_Exit.Size = new System.Drawing.Size(12, 34);
-            this.tsmi2_Exit.Click += new System.EventHandler(this.tsmi2_Exit_Click);
             // 
             // Home_page
             // 

@@ -53,6 +53,12 @@
     <Compile Include="Access.Designer.cs">
       <DependentUpon>Access.cs</DependentUpon>
     </Compile>
+    <Compile Include="Accounting_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting_book.Designer.cs">
+      <DependentUpon>Accounting_book.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddTrainess.cs">
       <SubType>Form</SubType>
     </Compile>

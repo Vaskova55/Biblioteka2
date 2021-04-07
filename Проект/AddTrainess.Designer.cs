@@ -41,6 +41,7 @@ namespace Проект
             this.cb_AddTrainess_noMiddle = new System.Windows.Forms.CheckBox();
             this.Ok_AddTrainess = new System.Windows.Forms.Button();
             this.lb1_AddTrainess = new System.Windows.Forms.Label();
+            this.id_Trainess = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.nud_AddTrainess_class)).BeginInit();
             this.SuspendLayout();
             // 
@@ -159,12 +160,21 @@ namespace Проект
             this.lb1_AddTrainess.Text = "Новый данные.";
             this.lb1_AddTrainess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // id_Trainess
+            // 
+            this.id_Trainess.Location = new System.Drawing.Point(9, 172);
+            this.id_Trainess.Name = "id_Trainess";
+            this.id_Trainess.Size = new System.Drawing.Size(54, 20);
+            this.id_Trainess.TabIndex = 22;
+            this.id_Trainess.Visible = false;
+            // 
             // AddTrainess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(266, 422);
+            this.Controls.Add(this.id_Trainess);
             this.Controls.Add(this.Ok_AddTrainess);
             this.Controls.Add(this.cb_AddTrainess_noMiddle);
             this.Controls.Add(this.tb_AddTrainess_name);
@@ -198,5 +208,6 @@ namespace Проект
         private System.Windows.Forms.CheckBox cb_AddTrainess_noMiddle;
         private System.Windows.Forms.Button Ok_AddTrainess;
         private System.Windows.Forms.Label lb1_AddTrainess;
+        private System.Windows.Forms.TextBox id_Trainess;
     }
 }

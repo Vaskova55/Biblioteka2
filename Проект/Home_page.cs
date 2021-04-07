@@ -41,5 +41,10 @@ namespace Проект
             f_a.Show();
             Hide();
         }
+
+        private void tsmi4_Accounting_book_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -41,7 +41,7 @@ namespace Проект
                 }
                 else
                 {
-                    Updat.TrainessUpdat(Convert.ToInt32(nud_AddTrainess_class.Value), tb_AddTrainess_fam.Text, tb_AddTrainess_name.Text, tb_AddTrainess_middle.Text);
+                    Updat.TrainessUpdat(Convert.ToInt32(id_Trainess.Text), Convert.ToInt32(nud_AddTrainess_class.Value), tb_AddTrainess_fam.Text, tb_AddTrainess_name.Text, tb_AddTrainess_middle.Text);
                 }
                 Close();
             }

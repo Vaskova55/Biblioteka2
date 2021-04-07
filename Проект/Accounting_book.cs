@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Проект
 {
-    public partial class SearchTrainess : Form
+    public partial class Accounting_book : Form
     {
-        public SearchTrainess()
+        public Accounting_book()
         {
             InitializeComponent();
-        }
-
-        private void tb_SearchTrainess_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

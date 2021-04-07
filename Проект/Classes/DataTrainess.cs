@@ -52,7 +52,7 @@ namespace Проект.Classes
                 "VALUES ('"+ Class +"', '"+ Family_name +"', '"+ First_name +"', '"+ Middle_name +"');");
         }
 
-        public static void TrainessUpdat(int idTrainess, int Class, string Family_name, string First_name, string Middle_name)
+        public void TrainessUpdat(int idTrainess, int Class, string Family_name, string First_name, string Middle_name)
         {
             BDConnection.Select("UPDATE `trainesses` SET `class` = '"+ Class + "'," +
                 " `family_name` = '"+ Family_name + "', `first_name` = '"+ First_name + "', `middle_name` = '"+ Middle_name + "' WHERE (`idTrainess` = '"+ idTrainess + "');");
