@@ -121,6 +121,7 @@ namespace Проект
             this.Update_Library.Size = new System.Drawing.Size(46, 43);
             this.Update_Library.TabIndex = 11;
             this.Update_Library.UseVisualStyleBackColor = false;
+            this.Update_Library.Click += new System.EventHandler(this.Update_Library_Click);
             // 
             // Delete_Library
             // 

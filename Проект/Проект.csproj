@@ -73,6 +73,7 @@
     </Compile>
     <Compile Include="Classes\BDConnection.cs" />
     <Compile Include="Classes\DataIssuance.cs" />
+    <Compile Include="Classes\DataLibrary.cs" />
     <Compile Include="Classes\DataTrainess.cs" />
     <Compile Include="Classes\DataUser.cs" />
     <Compile Include="Connection.cs">
