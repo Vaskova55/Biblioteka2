@@ -8,7 +8,6 @@ namespace Проект.Classes
 {
     public class DataLibrary
     {
-        int class;
 
     }
 }

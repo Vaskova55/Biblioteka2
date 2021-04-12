@@ -164,7 +164,7 @@ namespace Проект
             // Search_SearchLibrary
             // 
             this.Search_SearchLibrary.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Search_SearchLibrary.Location = new System.Drawing.Point(343, 61);
+            this.Search_SearchLibrary.Location = new System.Drawing.Point(371, 61);
             this.Search_SearchLibrary.Name = "Search_SearchLibrary";
             this.Search_SearchLibrary.Size = new System.Drawing.Size(147, 27);
             this.Search_SearchLibrary.TabIndex = 27;
@@ -174,7 +174,7 @@ namespace Проект
             // lb1_SearchLibrary
             // 
             this.lb1_SearchLibrary.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb1_SearchLibrary.Location = new System.Drawing.Point(339, 7);
+            this.lb1_SearchLibrary.Location = new System.Drawing.Point(367, 7);
             this.lb1_SearchLibrary.Name = "lb1_SearchLibrary";
             this.lb1_SearchLibrary.Size = new System.Drawing.Size(151, 28);
             this.lb1_SearchLibrary.TabIndex = 26;
@@ -184,7 +184,7 @@ namespace Проект
             // tb_SearchLibrary
             // 
             this.tb_SearchLibrary.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tb_SearchLibrary.Location = new System.Drawing.Point(343, 38);
+            this.tb_SearchLibrary.Location = new System.Drawing.Point(371, 38);
             this.tb_SearchLibrary.Name = "tb_SearchLibrary";
             this.tb_SearchLibrary.Size = new System.Drawing.Size(147, 20);
             this.tb_SearchLibrary.TabIndex = 25;

@@ -17,31 +17,31 @@ namespace Проект
         {
             InitializeComponent();
         }
-        DataTrainess Updat;
+        private DataTrainess TrainessEdited;
 
-        public AddTrainess(DataTrainess TrainessUpdat)
+        public AddTrainess(DataTrainess TrainessEdit)
         {
-            this.Updat = TrainessUpdat;
+            this.TrainessEdited = TrainessEdit;
             InitializeComponent();
 
 
-            nud_AddTrainess_class.Value = TrainessUpdat.Class;
-            tb_AddTrainess_fam.Text = TrainessUpdat.Family_name;
-            tb_AddTrainess_name.Text = TrainessUpdat.First_name;
-            tb_AddTrainess_middle.Text = TrainessUpdat.Middle_name;
+            nud_AddTrainess_class.Value = TrainessEdit.Class;
+            tb_AddTrainess_fam.Text = TrainessEdit.Family_name;
+            tb_AddTrainess_name.Text = TrainessEdit.First_name;
+            tb_AddTrainess_middle.Text = TrainessEdit.Middle_name;
         }
 
         private void Ok_AddTrainess_Click(object sender, EventArgs e)
         {
             if (nud_AddTrainess_class.Value.ToString().Length > 0 && tb_AddTrainess_fam.Text.Length > 0 && tb_AddTrainess_name.Text.Length > 0 && tb_AddTrainess_middle.Text.Length > 0)
             {
-                if (Updat==null)
+                if (TrainessEdited==null)
                 {
                     DataTrainess.TrainessAdd(Convert.ToInt32(nud_AddTrainess_class.Value), tb_AddTrainess_fam.Text, tb_AddTrainess_name.Text, tb_AddTrainess_middle.Text);
                 }
                 else
                 {
-                    Updat.TrainessUpdat(Convert.ToInt32(id_Trainess.Text), Convert.ToInt32(nud_AddTrainess_class.Value), tb_AddTrainess_fam.Text, tb_AddTrainess_name.Text, tb_AddTrainess_middle.Text);
+                    TrainessEdited.TrainessEdit(Convert.ToInt32(nud_AddTrainess_class.Value), tb_AddTrainess_fam.Text, tb_AddTrainess_name.Text, tb_AddTrainess_middle.Text);
                 }
                 Close();
             }

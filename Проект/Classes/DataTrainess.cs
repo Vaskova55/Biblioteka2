@@ -52,11 +52,10 @@ namespace Проект.Classes
                 "VALUES ('"+ Class +"', '"+ Family_name +"', '"+ First_name +"', '"+ Middle_name +"');");
         }
 
-        public void TrainessUpdat(int idTrainess, int Class, string Family_name, string First_name, string Middle_name)
+        public void TrainessEdit(int Class, string Family_name, string First_name, string Middle_name)
         {
-            BDConnection.Select("UPDATE `trainesses` SET `class` = '"+ Class + "'," +
-                " `family_name` = '"+ Family_name + "', `first_name` = '"+ First_name + "', `middle_name` = '"+ Middle_name + "' WHERE (`idTrainess` = '"+ idTrainess + "');");
-            this.idTrainess = idTrainess;
+            BDConnection.Select("UPDATE `trainesses` SET `class` = '" + Class + "'," +
+                " `family_name` = '" + Family_name + "', `first_name` = '" + First_name + "', `middle_name` = '" + Middle_name + "' WHERE (`idTrainess` = '" + idTrainess + "');");
             this.Class = Class;
             this.Family_name = Family_name;
             this.First_name = First_name;

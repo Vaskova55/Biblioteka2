@@ -60,10 +60,15 @@ namespace Проект
             if (dgv_Trainess.SelectedRows.Count > 0)
             {
                 DataTrainess trainess = dgv_Trainess.SelectedRows[0].Tag as DataTrainess;
-                AddTrainess f_at = new AddTrainess();
+                AddTrainess f_at = new AddTrainess(trainess);
                 f_at.Show();
                 Update();
             }
+        }
+
+        private void Export_Trainess_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
