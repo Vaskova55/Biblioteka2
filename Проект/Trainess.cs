@@ -68,7 +68,27 @@ namespace Проект
 
         private void Export_Trainess_Click(object sender, EventArgs e)
         {
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Filter = "Файлы excel|*.xlsx";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                List<DataTrainess> listTrainesses = DataTrainess.Select("");
+                string[,] values = new string[listTrainesses.Count + 1, 5];
 
+                values[0, 0] = "Класс";
+                values[0, 1] = "Фамилия";
+                values[0, 2] = "Имя";
+                values[0, 3] = "Отчество";
+
+                for (int i = 0; i < listTrainesses.Count; i++)
+                {
+                    values[i + 1, 0] = listTrainesses[i].Class.ToString();
+                    values[i + 1, 1] = listTrainesses[i].Family_name;
+                    values[i + 1, 2] = listTrainesses[i].First_name;
+                    values[i + 1, 3] = listTrainesses[i].Middle_name;
+                }
+                ExportData.ExportExcel(dialog.FileName, "Обучающиеся", values);
+            }
         }
     }
 }
